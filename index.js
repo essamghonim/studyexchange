@@ -42,10 +42,10 @@ if (process.env.S3_ENABLE) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_dg515lnp:qjrg64rf4i2lie8t90rbnerrh4@ds061374.mlab.com:61374/heroku_dg515lnp',
+  databaseURI: databaseUri || 'mongodb://heroku_l5ndx25b:7jfk31a6mc7jt97f6sjptunosg@ds149711.mlab.com:49711/heroku_l5ndx25b',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || '0747742841901002142214',
-  masterKey: process.env.MASTER_KEY || 'essamgbhonimAUCDrenchulaLove97!', //Add your master key here. Keep it secret!
+  appId: process.env.APP_ID || '5768943567465827355793846',
+  masterKey: process.env.MASTER_KEY || 'SaeedBrunelAuc03121993Drenchula', //Add your master key here. Keep it secret!
    push: {
 		android: {
 			senderId: '704699964050', // The Sender ID of GCM
