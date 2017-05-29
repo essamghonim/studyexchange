@@ -20,10 +20,10 @@ if (process.env.GCM_SENDER_ID && process.env.GCM_API_KEY) {
 if (process.env.APNS_ENABLE) {
     pushConfig['ios'] = [
         {
-            pfx: __dirname + 'HerokuCert.p12', // P12 file only
-            cert: __dirname + 'HerokuCert.pem', // If not using the .p12 format, the path to the certificate PEM to load from disk
-            key: __dirname + 'HerokuKey.unencrypted.pem', // If not using the .p12 format
-            bundleId: 'Com.ConnectLtd.PalBuddy',  // change to match bundleId
+            pfx: __dirname + 'StudyBuddiesCertificates.p12', // P12 file only
+            cert: __dirname + 'StudyBuddiesCert.pem', // If not using the .p12 format, the path to the certificate PEM to load from disk
+            key: __dirname + 'StudyBuddiesKey.unencrypted.pem', // If not using the .p12 format
+            bundleId: 'Connect.Ltd.StudyExchange',  // change to match bundleId
             production: false // dev certificate
         }
     ]
@@ -53,8 +53,8 @@ var api = new ParseServer({
 		},
     ios: [
       {
-        pfx: __dirname + '/HerokuCert.p12', // Dev PFX or P12
-        bundleId: 'Com.ConnectLtd.PalBuddy',
+        pfx: __dirname + '/StudyBuddiesCertificates.p12', // Dev PFX or P12
+        bundleId: 'Connect.Ltd.StudyExchange',
         production: false // Dev
       },
       {
