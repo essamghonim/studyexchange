@@ -21,7 +21,7 @@ if (process.env.APNS_ENABLE) {
     pushConfig['ios'] = [
         {
             pfx: __dirname + 'StudyBuddiesCertificates.p12', // P12 file only
-            cert: __dirname + 'StudyBuddiesCert.pem', // If not using the .p12 format, the path to the certificate PEM to load from disk
+            cert: __dirname + 'StudyBuddiesck.pem', // If not using the .p12 format, the path to the certificate PEM to load from disk
             key: __dirname + 'StudyBuddiesKey.unencrypted.pem', // If not using the .p12 format
             bundleId: 'Connect.Ltd.StudyExchange',  // change to match bundleId
             production: false // dev certificate
@@ -56,11 +56,6 @@ var api = new ParseServer({
         pfx: __dirname + '/StudyBuddiesCertificates.p12', // Dev PFX or P12
         bundleId: 'Connect.Ltd.StudyExchange',
         production: false // Dev
-      },
-      {
-        pfx: __dirname + '/AppProductionCertificates.p12',
-      bundleId: 'Com.ConnectLtd.PalBuddy',
-      production: true // Dev
       }
     ]
   },
