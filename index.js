@@ -56,6 +56,11 @@ var api = new ParseServer({
         pfx: __dirname + '/StudyBuddiesCertificates.p12', // Dev PFX or P12
         bundleId: 'Connect.Ltd.StudyExchange',
         production: false // Dev
+      },
+      {
+        pfx: __dirname + '/ProductionStudyBuddy.p12',
+      bundleId: 'Connect.Ltd.StudyExchange',
+      production: true // Dev
       }
     ]
   },
